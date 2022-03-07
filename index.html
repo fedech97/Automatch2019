@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatch</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body class="fondo">
+    <header>
+        <div class="container">
+            <h1 class="titulo">AUTOMATCH</h1>
+        </div>
+    </header>
+
+    <div class="slogan">
+        <h2 class="dbleclick">Encontra tu auto ideal en un solo lugar</h2>
+        <p class="ocultar">Bienvenidoxs a Automatch</p>
+    </div>
+
+    <div id="boton">
+        <button>Cargar pagina</button>
+    </div>
+
+    <div id="response">
+
+    </div>
+    
+    
+    <div>
+        <h3 class="formTexto">Por cualquier consulta no dudes en contactarnos</h3>
+    <form id="formulario" action="" class="suscripcion">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Federico Chulivertt"><br>
+        <label for="email">Correo</label><br>
+        <input type="email" name="email" id="email"><br>
+        <button  id="Empresa">Consulta Empresa</button>
+        <button  id="Planes">Consulta Planes</button>
+    </form>
+    </div>
+    
+    
+    
+    
+    <section> 
+    <div class="seleccion">
+        <h2>Personaliza tu auto</h2>
+        <p>Eleccion de color</p>
+        <label for="verde" class="verde">Verde</label>
+
+        <input type="radio" name="colorAuto" id="verde" value="Verde">
+        <label for="azul" class="azul">Azul</label>
+        <input type="radio" name="colorAuto" id="azul" value="Azul">
+            <img id="fordFocus" class="imagen" src="./multimedia/focusverde.jpg" alt="">
+    </div>
+    </section>
+
+
+
+
+
+    <div class="formulario">
+        <form action="">
+            <div id="error"></div>
+            <div class="campo">
+                <label aria-valuemax="marca" class="mrca"> Marca</label>
+                <select name="marca" id="marca">
+                    <option value="">-- Seleccione--</option>
+                    <option value="alta gama">Alta gama</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="economico">Economico</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="año" class="año">Año</label>
+                <select name="year" id="año"> 
+                    <option value="">--Seleccione--</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+
+
+            <div class="campo">
+                <label for="plan" class="plan">Plan</label>
+                <input type="radio" name="plan" value="basico" class="seguro" id="basico"> Basico
+                <input type="radio" name="plan" value="completo" class="seguro" id="completo"> Completo
+            </div>
+            <input type="button" id="cotizar" onclick="cotizarSeguro();"  value="Cotizar">
+        </form>
+
+        <div class="mensaje" id="msj">Elige marca, año y tipo de seguro</div>
+        <div id="resumen" style="display: none;"> </div>
+        <div class="" id="resultado" style="display: none;"></div>
+</div>
+
+<!-- <input type="button" id="cotizar" onclick="cotizarSeguro();" class="button-primary u-full-widht" value="Cotizar"> -->
+
+</body>
+
+<script type="text/javascript" src="js/cotizador.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
